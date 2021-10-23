@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=en>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<title>Lucky number</title>
+	</head>
+
+	<body onload="init()">
+		<div id="container">
+			<div class="panel">
+				<h2>I have a random number <br>between 1-100</h2>
+				<h2>Can you guess it?</h3><hr>
+				<button onclick="newGame()">NEW GAME</button>
+			</div>
+		
+			<div class="panel">
+				<h3 id="outputText">Enter your guess below &amp; press Enter:</h3>
+				<input type="number" id="inputBox" onchange="compareGuess()">
+				<p>Number of previous attempts: <span id="attempts"></span></p>
+			</div>
+		
+			<div class="panel">
+				<p>Your previous guesses:</p>
+				<p id="guessLog"></p>
+			</div>
+		</div>
+	
+		<script src="script.js"></script>
+
+	</body>
+</html>
+</html>
